@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#left-img-container {
+  width: 300px;
+  height: 300px;
+}
+
+.right-img {
+  width: 400px;
+  height: 400px;
+  transform-origin: 80% 80%;
+}
+
+canvas {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #left-img-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .right-img {
+    width: 200px;
+    height: 200px;
+  }
+}
